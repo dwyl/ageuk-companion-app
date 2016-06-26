@@ -1,0 +1,35 @@
+{
+  "name": "companion-app",
+  "version": "1.0.0",
+  "description": "An application for guided conversation between a companion and a client.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.1.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^13.4.1",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "semistandard": "^8.0.0",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "watch:css": "nodemon -e scss -x 'npm run build:css'",
+    "coverage": "istanbul cover test/*.js",
+    "test:lint": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ageuk/companion-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ageuk/companion-app/issues"
+  },
+  "homepage": "https://github.com/ageuk/companion-app#readme"
+}
