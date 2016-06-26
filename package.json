@@ -20,7 +20,9 @@
   "scripts": {
     "test": "semistandard && tape test/*.js",
     "coverage": "istanbul cover test/*.js",
-    "test:lint": "semistandard"
+    "test:lint": "semistandard",
+    "sass":  "sass --watch src/style.scss:src/style.css"
+
   },
   "repository": {
     "type": "git",
