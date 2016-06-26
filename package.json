@@ -18,7 +18,6 @@
   },
   "scripts": {
     "test": "tape test/*.js",
-    "watch:css": "nodemon -e scss -x 'npm run build:css'",
     "coverage": "istanbul cover test/*.js",
     "test:lint": "semistandard"
   },
