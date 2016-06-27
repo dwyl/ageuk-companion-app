@@ -3,4 +3,4 @@ machine:
     version: 6.1.0
 test:
   post:
-    - bash <(curl -s https://codecov.io/bash)
+    - cat ./coverage/lcov.info | ./node_modules/.bin/codecov
