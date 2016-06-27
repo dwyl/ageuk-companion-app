@@ -19,8 +19,8 @@
     "tape": "^4.6.0"
   },
   "scripts": {
-    "test": "semistandard && tape test/*.js && codecov",
-    "coverage": "istanbul cover test/*.js",
+    "test": "semistandard && tape test/*.js",
+    "coverage": "istanbul cover test/*.js && codecov",
     "test:lint": "semistandard",
     "sass": "sass --watch src/style.scss:src/style.css"
   },
