@@ -1,6 +1,6 @@
 # companion-app
 
-[![codecov](https://codecov.io/gh/ageuk/companion-app/branch/master/graph/badge.svg)](https://codecov.io/gh/ageuk/companion-app) 
+[![codecov](https://codecov.io/gh/ageuk/companion-app/branch/master/graph/badge.svg)](https://codecov.io/gh/ageuk/companion-app)
 
 [![CircleCI](https://circleci.com/gh/ageuk/companion-app/tree/master.svg?style=svg)](https://circleci.com/gh/ageuk/companion-app/tree/master)  
 

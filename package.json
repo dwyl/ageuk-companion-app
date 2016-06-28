@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "semistandard && tape test/*.js",
-    "coverage": "istanbul cover test/*.js && codecov",
+    "coverage": "istanbul cover tape ./test/test.js && codecov",
     "test:lint": "semistandard",
     "sass": "sass --watch src/style.scss:src/style.css"
   },
