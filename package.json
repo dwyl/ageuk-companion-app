@@ -23,11 +23,11 @@
     "tape": "^4.6.0"
   },
   "scripts": {
-    "test": "semistandard && tape test/*.js",
-    "coverage": "istanbul cover tape ./test/test.js && codecov",
+    "test": "semistandard && tape test/_runner.js",
+    "coverage": "istanbul cover tape ./test/_runner.js && codecov",
     "test:lint": "semistandard",
-    "sass": "sass --watch src/style.scss:src/style.css",
-    "start": "node lib/server.js"
+    "sass": "sass --watch public/src/scss/style.scss:public/src/style.css",
+    "start": "nodemon lib/server.js"
   },
   "repository": {
     "type": "git",
