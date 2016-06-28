@@ -6,4 +6,5 @@ machine:
     version: 6.1.0
 test:
   post:
-    - cat ./coverage/lcov.info | ./node_modules/.bin/codecov
+    - npm run coverage
+    - cat ./coverage/lcov.info
