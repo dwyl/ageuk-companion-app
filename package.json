@@ -7,9 +7,13 @@
     "node": ">=6.1.0"
   },
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "env2": "^2.1.0",
     "handlebars": "^4.0.5",
     "hapi": "^13.4.1",
+    "hapi-login": "^1.2.0",
+    "inert": "^4.0.0",
+    "joi": "^8.4.2",
     "mysql": "^2.11.1"
   },
   "devDependencies": {
@@ -19,10 +23,11 @@
     "tape": "^4.6.0"
   },
   "scripts": {
-    "test": "semistandard && tape test/*.js",
-    "coverage": "istanbul cover tape ./test/test.js && codecov",
+    "test": "semistandard && tape test/_runner.js",
+    "coverage": "istanbul cover tape ./test/_runner.js && codecov",
     "test:lint": "semistandard",
-    "sass": "sass --watch src/style.scss:src/style.css"
+    "sass": "sass --watch public/src/scss/style.scss:public/src/style.css",
+    "start": "nodemon lib/server.js"
   },
   "repository": {
     "type": "git",

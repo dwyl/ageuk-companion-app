@@ -38,4 +38,5 @@ jspm_packages
 
 config.env
 .sass-cache
-src/style.css.map
+public/src/style.css.map
+public/src/style.css
