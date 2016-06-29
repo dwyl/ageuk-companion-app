@@ -71,6 +71,8 @@ tape('entering a username and password via the login route', (t) => {
 });
 
 tape('teardown', (t) => {
-  server.stop();
+  server.stop((err) => {
+    if (err) console.log('Termination error: ' + err);
+  });
   t.end();
 });
