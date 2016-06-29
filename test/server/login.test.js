@@ -4,11 +4,15 @@ const tape = require('tape');
 const server = require('../../lib/server.js');
 
 tape('going to the login route should render login view', (t) => {
-  t.plan(1);
+  t.plan(2);
 
   server.inject({ url: '/login', method: 'GET' }, (res) => {
-    const actual = res.statusCode;
-    const expected = 200;
+    let actual = res.statusCode;
+    let expected = 200;
+    t.equals(actual, expected, '200 correct status code');
+
+    actual = res.payload.indexOf('<form>') > -1;
+    expected = true;
     t.equals(actual, expected, 'login view recieved');
   });
 });
