@@ -11,7 +11,7 @@ tape('going to the login route should render login view', (t) => {
     let expected = 200;
     t.equals(actual, expected, '200 correct status code');
 
-    actual = res.payload.indexOf('<form>') > -1;
+    actual = res.payload.indexOf('form') > -1;
     expected = true;
     t.equals(actual, expected, 'login view recieved');
   });
