@@ -30,6 +30,8 @@ tape('server should handle static assets', (t) => {
 });
 
 tape('teardown', (t) => {
-  server.stop();
+  server.stop((err) => {
+    if (err) console.log('Termination error: ' + err);
+  });
   t.end();
 });
