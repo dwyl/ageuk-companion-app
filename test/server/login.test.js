@@ -18,7 +18,7 @@ tape('entering a username and password via the login route', (t) => {
 
   const goodCredentialsRequest = {
     url: '/login',
-    method: '/post',
+    method: 'post',
     payload: {
       email: process.env.FAKE_EMAIL,
       password: process.env.FAKE_PASSWORD
@@ -37,7 +37,7 @@ tape('entering a username and password via the login route', (t) => {
 
   const badCredentialsRequest = {
     url: '/login',
-    method: '/post',
+    method: 'post',
     payload: {
       email: 'incorrect@password123.com',
       password: '123456789'
@@ -56,7 +56,7 @@ tape('entering a username and password via the login route', (t) => {
 
   const invalidCredentialsRequest = {
     url: '/login',
-    method: '/post',
+    method: 'post',
     payload: {
       email: 'bademail.com',
       password: '123456789'
