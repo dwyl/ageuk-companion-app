@@ -13,7 +13,7 @@ tape('going to the login route should render login view', (t) => {
 
     actual = res.payload.indexOf('form') > -1;
     expected = true;
-    t.equals(actual, expected, 'login view recieved');
+    t.equals(actual, expected, 'login view received');
   });
 });
 
