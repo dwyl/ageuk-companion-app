@@ -3,7 +3,7 @@
 // var template = Handlebars.compile(source);
 // console.log(template);
 //
-var context = { title: 'my new post', body: 'ellie smells' };
+// var context = { title: 'my new post', body: 'ellie smells' };
 // var html = template(context);
 // console.log(html);
 //
