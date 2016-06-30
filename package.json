@@ -7,7 +7,7 @@
     "node": ">=6.1.0"
   },
   "dependencies": {
-    "bcrypt": "^0.8.7",
+    "bcrypt": "^0.8.5",
     "env2": "^2.1.0",
     "handlebars": "^4.0.5",
     "hapi": "^13.4.1",
