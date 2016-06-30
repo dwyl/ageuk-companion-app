@@ -4,7 +4,7 @@ const server = require('../../lib/server.js');
 tape('server should start', (t) => {
   t.plan(2);
 
-  server.inject({ url: '/', method: 'GET' }, (res) => {
+  server.inject({ url: '/login', method: 'GET' }, (res) => {
     t.ok(res, 'server responds');
 
     const actual = res.statusCode;
