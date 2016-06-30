@@ -23,7 +23,6 @@ tape('server should handle static assets', (t) => {
 
   server.inject({ url: '/src/js/main.js', method: 'GET' }, (res) => {
     const actual = res.headers['content-type'].includes('application/javascript');
-    console.log(res.headers);
     t.ok(actual, 'main.js received correctly');
   });
 });
