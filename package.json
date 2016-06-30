@@ -14,7 +14,8 @@
     "hapi-login": "^1.2.0",
     "inert": "^4.0.0",
     "joi": "^8.4.2",
-    "mysql": "^2.11.1"
+    "mysql": "^2.11.1",
+    "vision": "^4.1.0"
   },
   "devDependencies": {
     "codecov": "^1.0.1",
