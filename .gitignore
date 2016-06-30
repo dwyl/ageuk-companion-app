@@ -40,3 +40,4 @@ config.env
 .sass-cache
 public/src/style.css.map
 public/src/style.css
+public/src/js/vendor
