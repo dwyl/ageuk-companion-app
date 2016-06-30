@@ -32,7 +32,8 @@
   },
   "semistandard": {
     "ignore": [
-      "/public/src/js/vendor/handlebars.runtime.js"
+      "/public/src/js/vendor/handlebars.runtime.js",
+      "/public/src/hbs/loginTemplate.js"
     ]
   },
   "repository": {
