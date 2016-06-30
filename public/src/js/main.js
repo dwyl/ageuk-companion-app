@@ -1,11 +1,19 @@
-// var source = document.getElementById('entry-template');
-// console.log(source);
-// var template = Handlebars.compile(source);
-// console.log(template);
-//
-// var context = { title: 'my new post', body: 'ellie smells' };
-// var html = template(context);
-// console.log(html);
-//
-// var target = document.getElementById('handlebars-target');
-// target.innerHTML = html;
+// TODO: fetch data from local storage
+var clients = {
+  one: 'Anne Onymous',
+  two: 'Miss Terry',
+  three: 'Mrs Merton'
+};
+
+function renderHtml (sourceName, context) {
+  var source = document.getElementById(sourceName).innerHTML;
+  var template = Handlebars.compile(source); // eslint-disable-line
+  return template(context);
+}
+
+function renderToDOM (targetName, sourceName, context) {
+  var target = document.getElementById(targetName);
+  target.innerHTML = renderHtml(sourceName, context);
+}
+
+renderToDOM('target', 'client-list', clients);
