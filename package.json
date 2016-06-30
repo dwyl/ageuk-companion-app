@@ -29,6 +29,11 @@
     "sass": "sass --watch public/src/scss/style.scss:public/src/style.css",
     "start": "nodemon lib/server.js"
   },
+  "semistandard": {
+    "ignore": [
+      "/public/src/js/vendor/handlebars.runtime.js"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ageuk/companion-app.git"
