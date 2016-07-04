@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html manifest="ageuk.appcache">
+  <head>
+    <meta charset="utf-8">
+    <title>Companion App</title>
+    <link rel="stylesheet" href="/src/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <!--TODO need to find out how to render this wrapper as a layout via handlebars-->
+  <body>
+    <h1>Client list page</h1>
+    <div id="target"></div>
+    <script id="client-list" type="text/x-handlebars-template">
+      <ul>
+        <li>{{one}}</li>
+        <li>{{two}}</li>
+        <li>{{three}}</li>
+      </ul>
+    </script>
+    <script src="/src/js/vendor/handlebars.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# v2 - 2016-06-30
+# This is a comment.
+http://localhost:4000/login
+http://localhost:4000/client-list
+http://localhost:4000/add-client
+http://localhost:4000/src/js/vendor/handlebars.min.js
+http://localhost:4000/src/style.css
+http://localhost:4000/src/js/main.js
+
+NETWORK:
+*
