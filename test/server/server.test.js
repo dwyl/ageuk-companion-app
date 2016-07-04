@@ -27,6 +27,22 @@ tape('server should handle static assets', (t) => {
   });
 });
 
+tape('server should respond with 200 for each route', (t) => {
+  t.plan(2);
+
+  server.inject({ url: '/add-client', method: 'GET' }, (res) => {
+    const actual = res.statusCode;
+    const expected = 200;
+    t.equals(actual, expected, 'server responds with 200 status code for add-client');
+  });
+
+  server.inject({ url: '/client-list', method: 'GET' }, (res) => {
+    const actual = res.statusCode;
+    const expected = 200;
+    t.equals(actual, expected, 'server responds with 200 status code for client-list');
+  });
+});
+
 tape('teardown', (t) => {
   server.stop((err) => {
     if (err) console.log('Termination error: ' + err);
