@@ -1,9 +1,5 @@
 # companion-app
 
-[![codecov](https://codecov.io/gh/ageuk/companion-app/branch/master/graph/badge.svg)](https://codecov.io/gh/ageuk/companion-app)
-[![CircleCI](https://circleci.com/gh/ageuk/companion-app/tree/master.svg?style=svg)](https://circleci.com/gh/ageuk/companion-app/tree/master)
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
-
 The companion app is an application to help guide a conversation between a
 companion and a client (elderly person). The ultimate goal of the app is to
 provide a list of actions to be completed after the conversation that will
